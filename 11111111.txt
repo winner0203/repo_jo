@@ -1,0 +1,2 @@
+Query string as well as parameters in the HTTP body for a POST method (after the ‘?’).
+
