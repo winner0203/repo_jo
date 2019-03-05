@@ -1,6 +1,13 @@
-in_file = open('chicken.txt')
+data = open('chicken.txt', 'r')
 
-for line in in_file:
-    print(line)
+sum = 0
+day = 0
 
-in_file.close()
+for line in data:
+    data = line.strip().split(": ")
+    print(data)
+    sum = sum + int(data[1])
+    day = day + 1
+    print(data)
+
+print(sum / day)
